@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-21T20:36:29.107425" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\dell\Desktop\RobotTest\test.robot">
+<test id="s1-t1" name="Login User" line="10">
+<kw name="Navigate to URL" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-21T20:36:30.811042" level="INFO">Opening browser 'Chrome' to base url 'https://ecommerce-playground.lambdatest.io/'.</msg>
+<arg>${baseurl}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-21T20:36:30.810040" elapsed="23.019994"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-21T20:36:53.831030" elapsed="1.037478"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-21T20:36:55.072960" level="INFO">Page title is 'Your Store'.</msg>
+<arg>Your Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-04-21T20:36:54.869506" elapsed="0.204449"/>
+</kw>
+<arg>${url}</arg>
+<status status="PASS" start="2024-04-21T20:36:30.795921" elapsed="24.278034"/>
+</kw>
+<kw name="Sign In">
+<msg time="2024-04-21T20:36:55.080947" level="FAIL">No keyword with name 'Sign In' found.</msg>
+<arg>${email}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2024-04-21T20:36:55.079946" elapsed="0.001001">No keyword with name 'Sign In' found.</status>
+</kw>
+<status status="FAIL" start="2024-04-21T20:36:30.721976" elapsed="24.360071">No keyword with name 'Sign In' found.</status>
+</test>
+<test id="s1-t2" name="Reset mot de pass valid" line="13">
+<kw name="Navigate to URL" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-21T20:36:55.094008" level="INFO">Opening browser 'Chrome' to base url 'https://ecommerce-playground.lambdatest.io/'.</msg>
+<arg>${baseurl}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-21T20:36:55.093011" elapsed="21.998846"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-21T20:37:17.092861" elapsed="1.234794"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-21T20:37:18.763500" level="INFO">Page title is 'Your Store'.</msg>
+<arg>Your Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-04-21T20:37:18.328657" elapsed="0.434843"/>
+</kw>
+<arg>${url}</arg>
+<status status="PASS" start="2024-04-21T20:36:55.091017" elapsed="23.673485"/>
+</kw>
+<kw name="Foget Password" owner="Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-21T20:37:18.769492" level="INFO">Clicking element 'xpath=//body/div[@class='mz-pure-container']/div[@id='container']/header[@class='header']/div[@id='main-navigation']/div[@id='entry_217831']/div[@class='entry-section container d-none d-md-flex flex-row align-items-center']/div[@id='entry_217834']/nav[@class='navbar navbar-expand-sm hoverable navbar-default bg-default horizontal']/div[@id='widget-navbar-217834']/ul[@class='navbar-nav horizontal']/li[6]/a[1]'.</msg>
+<arg>xpath=//body/div[@class='mz-pure-container']/div[@id='container']/header[@class='header']/div[@id='main-navigation']/div[@id='entry_217831']/div[@class='entry-section container d-none d-md-flex flex-row align-items-center']/div[@id='entry_217834']/nav[@class='navbar navbar-expand-sm hoverable navbar-default bg-default horizontal']/div[@id='widget-navbar-217834']/ul[@class='navbar-nav horizontal']/li[6]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T20:37:18.768493" elapsed="5.446642"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-04-21T20:37:24.217642" level="INFO">Clicking link 'xpath=//div[@class='form-group']//a[normalize-space()='Forgotten Password']'.</msg>
+<arg>xpath=//div[@class='form-group']//a[normalize-space()='Forgotten Password']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T20:37:24.215135" elapsed="3.156296"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Forgot Your Password?</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-21T20:37:27.371431" elapsed="0.108824"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-21T20:37:27.482253" level="INFO">Typing text 'Khlifi@test.com' into text field 'name=email'.</msg>
+<arg>name=email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T20:37:27.481253" elapsed="1.244771"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-21T20:37:28.727024" level="INFO">Clicking button 'xpath=//button[normalize-space()='Continue']'.</msg>
+<arg>xpath=//button[normalize-space()='Continue']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T20:37:28.727024" elapsed="3.021206"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>An email with a confirmation link has been sent your email address.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-21T20:37:31.749228" elapsed="0.322651"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2024-04-21T20:37:18.767495" elapsed="13.305384"/>
+</kw>
+<status status="PASS" start="2024-04-21T20:36:55.090018" elapsed="37.071636"/>
+</test>
+<status status="FAIL" start="2024-04-21T20:36:29.114413" elapsed="63.952594"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
