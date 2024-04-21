@@ -56,3 +56,21 @@ Update Quantitis Product
     Input Text    css=:nth-child(4) > .input-group > .form-control    5
     Click Button    xpath=//button[@data-original-title='Update']
     Wait Until Page Contains    Success: You have modified your shopping cart!      
+Delete Product
+    Click Element    css=.btn-danger > .fas
+    Wait Until Page Contains    Shopping Cart
+Paiement product
+    Click Button    xpath=//a[@class='btn btn-lg btn-primary']   
+    Wait Until Page Contains    Shopping Cart
+    Select Radio Button    id=input-payment-address-new    new
+    Input Text    id=input-payment-firstname    Khlifi
+    Input Text    id=input-payment-lastname    Ameni
+    Input Text    id=input-payment-address-1    Le Bardo Tunis
+    Input Text    id=input-payment-city    Le Bardo
+    Select From List by Label    id=input-payment-country    Tunisia
+    Select From List by Label    id=input-payment-zone    Tunis
+    Select Checkbox    id=input-agree
+    Click Button    css=#button-save    
+    Wait Until Page Contains    Confirm Order
+    Click Button    css=#button-confirm    
+    Wait Until Page Contains    Your order has been placed!

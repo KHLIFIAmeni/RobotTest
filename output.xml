@@ -1,158 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-21T22:32:17.119180" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-21T23:10:30.035069" rpa="false" schemaversion="5">
 <suite id="s1" name="Test" source="C:\Users\dell\Desktop\RobotTest\test.robot">
-<test id="s1-t1" name="Update qté product in cart" line="20">
+<test id="s1-t1" name="Confirm product and paiement" line="30">
 <kw name="Navigate to URL" owner="Keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-21T22:32:21.338916" level="INFO">Opening browser 'Chrome' to base url 'https://ecommerce-playground.lambdatest.io/'.</msg>
+<msg time="2024-04-21T23:10:31.304617" level="INFO">Opening browser 'Chrome' to base url 'https://ecommerce-playground.lambdatest.io/'.</msg>
 <arg>${baseurl}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-21T22:32:21.322940" elapsed="21.560232"/>
+<status status="PASS" start="2024-04-21T23:10:31.304617" elapsed="17.716293"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-04-21T22:32:42.884163" elapsed="0.868151"/>
+<status status="PASS" start="2024-04-21T23:10:49.021908" elapsed="0.906513"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-04-21T22:32:44.452896" level="INFO">Page title is 'Your Store'.</msg>
+<msg time="2024-04-21T23:10:50.806239" level="INFO">Page title is 'Your Store'.</msg>
 <arg>Your Store</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-04-21T22:32:43.753317" elapsed="0.699579"/>
+<status status="PASS" start="2024-04-21T23:10:49.928421" elapsed="0.877818"/>
 </kw>
 <arg>${url}</arg>
-<status status="PASS" start="2024-04-21T22:32:21.297978" elapsed="23.155914"/>
+<status status="PASS" start="2024-04-21T23:10:31.304617" elapsed="19.501622"/>
 </kw>
 <kw name="Sign In" owner="Keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-21T22:32:44.463878" level="INFO">Clicking element 'xpath=//body/div[@class='mz-pure-container']/div[@id='container']/header[@class='header']/div[@id='main-navigation']/div[@id='entry_217831']/div[@class='entry-section container d-none d-md-flex flex-row align-items-center']/div[@id='entry_217834']/nav[@class='navbar navbar-expand-sm hoverable navbar-default bg-default horizontal']/div[@id='widget-navbar-217834']/ul[@class='navbar-nav horizontal']/li[6]/a[1]'.</msg>
+<msg time="2024-04-21T23:10:50.813723" level="INFO">Clicking element 'xpath=//body/div[@class='mz-pure-container']/div[@id='container']/header[@class='header']/div[@id='main-navigation']/div[@id='entry_217831']/div[@class='entry-section container d-none d-md-flex flex-row align-items-center']/div[@id='entry_217834']/nav[@class='navbar navbar-expand-sm hoverable navbar-default bg-default horizontal']/div[@id='widget-navbar-217834']/ul[@class='navbar-nav horizontal']/li[6]/a[1]'.</msg>
 <arg>xpath=//body/div[@class='mz-pure-container']/div[@id='container']/header[@class='header']/div[@id='main-navigation']/div[@id='entry_217831']/div[@class='entry-section container d-none d-md-flex flex-row align-items-center']/div[@id='entry_217834']/nav[@class='navbar navbar-expand-sm hoverable navbar-default bg-default horizontal']/div[@id='widget-navbar-217834']/ul[@class='navbar-nav horizontal']/li[6]/a[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-21T22:32:44.461883" elapsed="4.137580"/>
+<status status="PASS" start="2024-04-21T23:10:50.811232" elapsed="3.291342"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-04-21T22:32:48.670473" level="INFO">Current page contains text 'Returning Customer'.</msg>
+<msg time="2024-04-21T23:10:54.173841" level="INFO">Current page contains text 'Returning Customer'.</msg>
 <arg>Returning Customer</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-04-21T22:32:48.600465" elapsed="0.076017"/>
+<status status="PASS" start="2024-04-21T23:10:54.103570" elapsed="0.070271"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-21T22:32:48.680154" level="INFO">Typing text 'Khlifi@test.com' into text field 'css=#input-email'.</msg>
+<msg time="2024-04-21T23:10:54.175836" level="INFO">Typing text 'Khlifi@test.com' into text field 'css=#input-email'.</msg>
 <arg>css=#input-email</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-21T22:32:48.677484" elapsed="0.842575"/>
+<status status="PASS" start="2024-04-21T23:10:54.174838" elapsed="0.641650"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-04-21T22:32:49.522055" level="INFO">Typing password into text field 'css=#input-password'.</msg>
-<msg time="2024-04-21T22:32:49.701984" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2024-04-21T23:10:54.817488" level="INFO">Typing password into text field 'css=#input-password'.</msg>
+<msg time="2024-04-21T23:10:54.940507" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>css=#input-password</arg>
 <arg>${pwd}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-21T22:32:49.520059" elapsed="0.613688"/>
+<status status="PASS" start="2024-04-21T23:10:54.816488" elapsed="0.436180"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-04-21T22:32:50.134746" level="INFO">Clicking button 'xpath=//input[@value='Login']'.</msg>
+<msg time="2024-04-21T23:10:55.252668" level="INFO">Clicking button 'xpath=//input[@value='Login']'.</msg>
 <arg>xpath=//input[@value='Login']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-21T22:32:50.133747" elapsed="3.535836"/>
+<status status="PASS" start="2024-04-21T23:10:55.252668" elapsed="3.522034"/>
 </kw>
 <arg>${email}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2024-04-21T22:32:44.460882" elapsed="9.208701"/>
+<status status="PASS" start="2024-04-21T23:10:50.809235" elapsed="7.966463"/>
 </kw>
 <kw name="Add Product to Store" owner="Keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-21T22:32:53.682563" level="INFO">Typing text 'HTC Touch HD' into text field 'xpath=//div[@id='entry_217822']//input[@placeholder='Search For Products']'.</msg>
+<msg time="2024-04-21T23:10:58.782384" level="INFO">Typing text 'HTC Touch HD' into text field 'xpath=//div[@id='entry_217822']//input[@placeholder='Search For Products']'.</msg>
 <arg>xpath=//div[@id='entry_217822']//input[@placeholder='Search For Products']</arg>
 <arg>HTC Touch HD</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-21T22:32:53.682563" elapsed="0.670315"/>
+<status status="PASS" start="2024-04-21T23:10:58.781385" elapsed="0.660518"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-04-21T22:32:54.354881" level="INFO">Clicking button 'xpath=//button[normalize-space()='Search']'.</msg>
+<msg time="2024-04-21T23:10:59.442901" level="INFO">Clicking button 'xpath=//button[normalize-space()='Search']'.</msg>
 <arg>xpath=//button[normalize-space()='Search']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-21T22:32:54.353880" elapsed="3.821392"/>
+<status status="PASS" start="2024-04-21T23:10:59.441903" elapsed="3.375275"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Search - HTC Touch HD</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-04-21T22:32:58.176271" elapsed="0.078877"/>
+<status status="PASS" start="2024-04-21T23:11:02.818180" elapsed="0.068034"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-21T22:32:58.257148" level="INFO">Clicking element 'xpath=//a[@id='mz-product-grid-image-28-212469']//div[@class='carousel-item active']//img[@title='HTC Touch HD']'.</msg>
+<msg time="2024-04-21T23:11:02.888207" level="INFO">Clicking element 'xpath=//a[@id='mz-product-grid-image-28-212469']//div[@class='carousel-item active']//img[@title='HTC Touch HD']'.</msg>
 <arg>xpath=//a[@id='mz-product-grid-image-28-212469']//div[@class='carousel-item active']//img[@title='HTC Touch HD']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-21T22:32:58.256146" elapsed="8.107236"/>
+<status status="PASS" start="2024-04-21T23:11:02.887212" elapsed="4.146073"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-04-21T22:33:06.365384" level="INFO">Clicking button 'xpath=//div[@id='entry_216842']//button[@title='Add to Cart'][normalize-space()='Add to Cart']'.</msg>
+<msg time="2024-04-21T23:11:07.034292" level="INFO">Clicking button 'xpath=//div[@id='entry_216842']//button[@title='Add to Cart'][normalize-space()='Add to Cart']'.</msg>
 <arg>xpath=//div[@id='entry_216842']//button[@title='Add to Cart'][normalize-space()='Add to Cart']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-21T22:33:06.364384" elapsed="0.339509"/>
+<status status="PASS" start="2024-04-21T23:11:07.034292" elapsed="0.516317"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Success: You have added</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-04-21T22:33:06.704891" elapsed="0.387762"/>
+<status status="PASS" start="2024-04-21T23:11:07.550609" elapsed="0.872128"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-04-21T22:33:17.093925" level="INFO">Slept 10 seconds.</msg>
+<msg time="2024-04-21T23:11:18.423721" level="INFO">Slept 10 seconds.</msg>
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-04-21T22:33:07.092653" elapsed="10.002812"/>
+<status status="PASS" start="2024-04-21T23:11:08.422737" elapsed="10.000984"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-21T22:33:17.098321" level="INFO">Clicking element 'css=#entry_217825 &gt; a[aria-controls="cart-total-drawer"]'.</msg>
+<msg time="2024-04-21T23:11:18.423721" level="INFO">Clicking element 'css=#entry_217825 &gt; a[aria-controls="cart-total-drawer"]'.</msg>
 <arg>css=#entry_217825 &gt; a[aria-controls="cart-total-drawer"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-21T22:33:17.095465" elapsed="0.345249"/>
+<status status="PASS" start="2024-04-21T23:11:18.423721" elapsed="0.260665"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-21T22:33:17.442717" level="INFO">Clicking link 'css=a[href="https://ecommerce-playground.lambdatest.io/index.php?route=checkout/cart"]'.</msg>
+<msg time="2024-04-21T23:11:18.684386" level="INFO">Clicking link 'css=a[href="https://ecommerce-playground.lambdatest.io/index.php?route=checkout/cart"]'.</msg>
 <arg>css=a[href="https://ecommerce-playground.lambdatest.io/index.php?route=checkout/cart"]</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-21T22:33:17.442717" elapsed="2.866701"/>
+<status status="PASS" start="2024-04-21T23:11:18.684386" elapsed="2.782947"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>HTC Touch HD</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-04-21T22:33:20.311415" elapsed="0.073883"/>
+<status status="PASS" start="2024-04-21T23:11:21.467333" elapsed="0.109478"/>
 </kw>
-<status status="PASS" start="2024-04-21T22:32:53.680562" elapsed="26.704736"/>
+<status status="PASS" start="2024-04-21T23:10:58.777391" elapsed="22.799420"/>
 </kw>
-<kw name="Update Quantitis Product" owner="Keywords">
-<kw name="Clear Element Text" owner="SeleniumLibrary">
-<arg>css=:nth-child(4) &gt; .input-group &gt; .form-control</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-21T22:33:20.388291" elapsed="0.216485"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-21T22:33:20.607773" level="INFO">Typing text '5' into text field 'css=:nth-child(4) &gt; .input-group &gt; .form-control'.</msg>
-<arg>css=:nth-child(4) &gt; .input-group &gt; .form-control</arg>
-<arg>5</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-21T22:33:20.606772" elapsed="0.434373"/>
-</kw>
+<kw name="Paiement product" owner="Keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-04-21T22:33:21.043145" level="INFO">Clicking button 'xpath=//button[@data-original-title='Update']'.</msg>
-<msg time="2024-04-21T22:33:21.499426" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-04-21T22:33:21.499426" level="FAIL">Button with locator 'xpath=//button[@data-original-title='Update']' not found.</msg>
-<arg>xpath=//button[@data-original-title='Update']</arg>
+<msg time="2024-04-21T23:11:21.582803" level="INFO">Clicking button 'xpath=//a[@class='btn btn-lg btn-primary']'.</msg>
+<msg time="2024-04-21T23:11:22.050028" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-31.png"&gt;&lt;img src="selenium-screenshot-31.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-21T23:11:22.051107" level="FAIL">Button with locator 'xpath=//a[@class='btn btn-lg btn-primary']' not found.</msg>
+<arg>xpath=//a[@class='btn btn-lg btn-primary']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="FAIL" start="2024-04-21T22:33:21.042143" elapsed="0.468265">Button with locator 'xpath=//button[@data-original-title='Update']' not found.</status>
+<status status="FAIL" start="2024-04-21T23:11:21.581808" elapsed="0.483585">Button with locator 'xpath=//a[@class='btn btn-lg btn-primary']' not found.</status>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Success: You have modified your shopping cart!</arg>
+<arg>Shopping Cart</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2024-04-21T22:33:21.511412" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-21T23:11:22.066395" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2024-04-21T22:33:20.387294" elapsed="1.124118">Button with locator 'xpath=//button[@data-original-title='Update']' not found.</status>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<arg>id=input-payment-address-new</arg>
+<arg>new</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="NOT RUN" start="2024-04-21T23:11:22.066395" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2024-04-21T22:32:21.261309" elapsed="60.253094">Button with locator 'xpath=//button[@data-original-title='Update']' not found.</status>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=input-payment-firstname</arg>
+<arg>Khlifi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T23:11:22.067390" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=input-payment-lastname</arg>
+<arg>Ameni</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T23:11:22.067390" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=input-payment-address-1</arg>
+<arg>Le Bardo Tunis</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T23:11:22.068389" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=input-payment-city</arg>
+<arg>Le Bardo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T23:11:22.069387" elapsed="0.000997"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id=input-payment-country</arg>
+<arg>Tunisia</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-04-21T23:11:22.071383" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id=input-payment-zone</arg>
+<arg>Tunis</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-04-21T23:11:22.072382" elapsed="0.000000"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>id=input-agree</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T23:11:22.073379" elapsed="0.001000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=#button-save</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T23:11:22.074379" elapsed="0.000997"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Confirm Order</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-21T23:11:22.075376" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=#button-confirm</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T23:11:22.076375" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your order has been placed!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-21T23:11:22.076375" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-21T23:11:21.580804" elapsed="0.496569">Button with locator 'xpath=//a[@class='btn btn-lg btn-primary']' not found.</status>
+</kw>
+<status status="FAIL" start="2024-04-21T23:10:31.304617" elapsed="50.781817">Button with locator 'xpath=//a[@class='btn btn-lg btn-primary']' not found.</status>
 </test>
-<status status="FAIL" start="2024-04-21T22:32:17.125640" elapsed="64.395752"/>
+<status status="FAIL" start="2024-04-21T23:10:30.035069" elapsed="52.436261"/>
 </suite>
 <statistics>
 <total>
