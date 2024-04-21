@@ -38,5 +38,21 @@ Foget Password
     Click Button    xpath=//button[normalize-space()='Continue']
 
     Wait Until Page Contains    An email with a confirmation link has been sent your email address. 
-# Add Product to Store
-       
+Add Product to Store
+    Input Text    xpath=//div[@id='entry_217822']//input[@placeholder='Search For Products']    HTC Touch HD
+    Click Button    xpath=//button[normalize-space()='Search']
+    Wait Until Page Contains    Search - HTC Touch HD
+    Click Element    xpath=//a[@id='mz-product-grid-image-28-212469']//div[@class='carousel-item active']//img[@title='HTC Touch HD']
+    Click Button    xpath=//div[@id='entry_216842']//button[@title='Add to Cart'][normalize-space()='Add to Cart']
+    Wait Until Page Contains    Success: You have added 
+    Sleep    10s    # Attendre 10 secondes 
+
+    Click Element    css=#entry_217825 > a[aria-controls="cart-total-drawer"]
+
+    Click Link    css=a[href="https://ecommerce-playground.lambdatest.io/index.php?route=checkout/cart"]
+    Wait Until Page Contains    HTC Touch HD
+Update Quantitis Product
+    Clear Element Text    css=:nth-child(4) > .input-group > .form-control
+    Input Text    css=:nth-child(4) > .input-group > .form-control    5
+    Click Button    xpath=//button[@data-original-title='Update']
+    Wait Until Page Contains    Success: You have modified your shopping cart!      
